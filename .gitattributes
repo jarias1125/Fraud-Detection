@@ -3,5 +3,3 @@
 *.Rmd linguist-detectable=true
 *.md linguist-documentation
 *.html linguist-documentation
-echo "*.qmd linguist-language=R" >> .gitattributes
-echo "*.Rmd linguist-language=R" >> .gitattributes
