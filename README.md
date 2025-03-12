@@ -77,14 +77,6 @@ This project experiments with **multiple supervised learning models**, with **pe
 - **AUC-ROC:** 0.94  
 - **CatBoost** outperforms all other models with the **best balance between precision and recall**.
 
-### **Neural Network (MLP)**
-- **Accuracy:** 97.8%  
-- **Precision:** 80.1%  
-- **Recall:** 70.6%  
-- **F1-Score:** 75.0%  
-- **AUC-ROC:** 0.89  
-- Neural Networks perform well but require significant **hyperparameter tuning**.
-
 ---
 
 ## Data Processing & Feature Engineering
@@ -106,4 +98,17 @@ Since fraud detection is a **highly imbalanced problem**, **accuracy alone is no
 4. **AUC-ROC Score:** Measures how well the model differentiates fraud from non-fraud.
 
 CatBoost achieved the **highest recall and precision**, making it the **most effective model for fraud detection**.
+
+## Conclusion
+The fraud detection project successfully applied **machine learning models** to classify fraudulent transactions in an **imbalanced dataset**. The analysis demonstrated that **ensemble models** (combining XGBoost and LightGBM) achieved the **highest performance**, with an **AUC-ROC of 0.9390** and a **recall of 99.71%**, making it highly effective in identifying fraud cases.  
+
+The key findings from this study include:  
+- **Feature importance analysis** revealed that **transaction amount, email domain, and card information** significantly influence fraud detection.  
+- **SMOTE oversampling** was applied to balance the dataset and improve model recall.  
+- **Threshold tuning (0.2)** improved the trade-off between precision and recall, optimizing fraud classification performance.  
+- **Logistic Regression performed poorly** compared to tree-based models, highlighting the need for advanced ML techniques in fraud detection.  
+
+Despite the **high recall**, the **specificity of 55.93%** indicates that some legitimate transactions may be misclassified as fraud. **Future improvements** should focus on **further optimizing the decision threshold** and **incorporating additional fraud detection signals** (e.g., geolocation and IP-based anomaly detection).  
+
+This project highlights the **importance of machine learning in financial fraud prevention**, demonstrating how **data-driven approaches can enhance fraud detection accuracy** while minimizing false positives.
 
