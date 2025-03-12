@@ -1,2 +1,5 @@
-*.Rmd linguist-language=R
+*.qmd linguist-detectable=true
+*.R linguist-detectable=true
+*.Rmd linguist-detectable=true
+*.md linguist-documentation
 *.html linguist-documentation
